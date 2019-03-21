@@ -2,7 +2,7 @@
 @media screen and (max-width: 2180px    ){
     .class1{
         width: 44%;
-        background:#f00000;
+        background:#f1f1f1;
         float:left;
         margin: 0 15px 15px 0;
         text-align:center;
@@ -10,7 +10,7 @@
         border: 3px solid black;
     }
 }
-@media screen and (max-width: 2180px    ){
+
     .class2{
         width: 90%;
         background:blue;
@@ -20,9 +20,9 @@
         padding: 10px;
         border: 3px solid black;
     }
-}
 
-@media screen and (max-width: 800px) {
+
+@media handheld {
     .class2 {
         width: 90%;
         background:blue;
@@ -37,10 +37,22 @@
     .class1 {
         width: 90%;
         float:left;
+        background:#f1f1f1;
         margin: 0 15px 15px 0;
         text-align:center;
         padding: 10px;
         border: 3px solid black;
     }
 
+}
+@media handheld {
+    .class1 {
+        width: 90%;
+        float:left;
+        margin: 0 15px 15px 0;
+        text-align:center;
+        background:#f1f1f1;
+        padding: 10px;
+        border: 3px solid black;
+    }
 }
