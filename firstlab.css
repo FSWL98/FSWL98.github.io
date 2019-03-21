@@ -1,4 +1,4 @@
-@media handheld {
+/*@media handheld {
     .class1 {
         width: 90%;
         float:left;
@@ -9,8 +9,21 @@
         border: 3px solid black;
         font-size: 200%;
     }
+}*/
+@media all and (max-width: 800px) {
+    .class1 {
+        width: 90%;
+        float:left;
+        margin: 0 15px 15px 0;
+        text-align:center;
+        background:#f1f1f1;
+        padding: 10px;
+        border: 3px solid black;
+    }
+
 }
-@media screen and (max-width: 2180px    ){
+
+@media all and (max-width: 2180px    ){
     .class1{
         width: 44%;
         background:#f1f1f1;
@@ -21,27 +34,15 @@
         border: 3px solid black;
     }
 }
-
-    .class2{
-        width: 90%;
-        background:blue;
-        float:left;
-        margin: 0 15px 15px 0;
-        text-align:center;
-        padding: 10px;
-        border: 3px solid black;
-    }
-
-@media screen and (max-width: 800px) {
-    .class1 {
-        width: 90%;
-        float:left;
-        background:#f1f1f1;
-        margin: 0 15px 15px 0;
-        text-align:center;
-        padding: 10px;
-        border: 3px solid black;
-    }
-
+.class2{
+    width: 90%;
+    background:blue;
+    float:left;
+    margin: 0 15px 15px 0;
+    text-align:center;
+    padding: 10px;
+    border: 3px solid black;
 }
+
+
 
