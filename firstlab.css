@@ -1,5 +1,15 @@
-
-@media all and (max-width: 800px) or (orientation: portrait)  {
+@media screen and (max-width: 2180px ){
+    .class1{
+        width: 44%;
+        background:#f1f1f1;
+        float:left;
+        margin: 0 15px 15px 0;
+        text-align:center;
+        padding: 10px;
+        border: 3px solid black;
+    }
+}
+@media all and (orientation: portrait)  {
     .class1 {
         width: 90%;
         float:left;
@@ -11,18 +21,18 @@
     }
 
 }
-
-@media all and (max-width: 2180px ){
-    .class1{
-        width: 44%;
-        background:#f1f1f1;
+@media screen and (max-width: 800px) {
+    .class1 {
+        width: 90%;
         float:left;
         margin: 0 15px 15px 0;
         text-align:center;
+        background:#f0f0f0;
         padding: 10px;
         border: 3px solid black;
     }
 }
+
 .class2{
     width: 90%;
     background:blue;
@@ -32,6 +42,5 @@
     padding: 10px;
     border: 3px solid black;
 }
-
 
 
