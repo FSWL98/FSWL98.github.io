@@ -1,4 +1,4 @@
-@media screen and (max-width: 2180px ){
+@media all and (max-width: 2180px ){
     .class1{
         width: 44%;
         background:#f1f1f1;
@@ -21,7 +21,7 @@
     }
 
 }
-@media screen and (max-width: 1080px) {
+@media all and (max-width: 800px) {
     .class1 {
         width: 90%;
         float:left;
@@ -35,7 +35,7 @@
 
 .class2{
     width: 90%;
-    background:blue;
+    background:lightblue;
     float:left;
     margin: 0 15px 15px 0;
     text-align:center;
