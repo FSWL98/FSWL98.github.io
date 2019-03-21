@@ -1,4 +1,4 @@
-/*@media handheld {
+@media handheld and (max-width: 1440px) {
     .class1 {
         width: 90%;
         float:left;
@@ -9,7 +9,7 @@
         border: 3px solid black;
         font-size: 200%;
     }
-}*/
+}
 @media all and (max-width: 800px) {
     .class1 {
         width: 90%;
