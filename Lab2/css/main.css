@@ -106,3 +106,8 @@ body {
     border-top-style: groove;
     text-align: center;
 }
+@media all and (orientation: portrait) {
+	.contact-from h1, p {
+		padding: 5px;
+	}
+}
