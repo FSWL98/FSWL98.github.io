@@ -1,0 +1,107 @@
+.header{
+    position: relative;
+    background-image: url('../images/header.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+body {
+    background-color: darkgray;
+}
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(244, 244, 244, 0.79);
+}
+.caption{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+.caption p{
+    color:#666;
+    font-size: 20px;
+    width: 50%;
+    line-height: 1.5;
+}
+.description{
+    padding: 0;
+    font-size: larger;
+}
+.description .short{
+    align-content: center;
+    vertical-align: center;
+    padding-top: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    text-align: justify;
+}
+.description .full {
+    align-content: center;
+    vertical-align: center;
+    padding: 60px;
+    padding-right: 20px;
+    text-align: justify;
+}
+.description .short-image {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    padding-left: 80px;
+}
+.description .full-image {
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    padding: 60px;
+}
+.advantages{
+    background-color: #202326;
+    color: lightgrey;
+}
+.advantages h2 {
+    text-align: center;
+}
+.advantages h4 {
+    text-align: center;
+    min-height: 60px;
+}
+.advantages .image {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    padding-left: 20px;
+}
+.advantages p {
+    font-size: 20px;
+    padding: 20px;
+    text-align: justify;
+}
+.contact-form {
+   background-color: #202326;
+    padding-bottom: 20px;
+}
+.contact-form textarea {
+    min-height: 200px;
+    font-size: 16px;
+}
+.contact-form h1, p {
+    color: whitesmoke;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.contact-form .btn {
+    max-width: 100px;
+}
+.footer {
+    background-color: #202326;
+    border-top: whitesmoke;
+    border-top-style: groove;
+    text-align: center;
+}
