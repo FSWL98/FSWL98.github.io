@@ -110,4 +110,7 @@ body {
 	.contact-form h1, p {
 		padding: 5px;
 	}
+	.caption p {
+		width: 90%;
+	}
 }
