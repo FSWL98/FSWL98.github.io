@@ -47,15 +47,17 @@ body {
 .description .full {
     align-content: center;
     vertical-align: center;
-    padding: 60px;
+    padding-top: 70px;
+    padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 10px;
     text-align: justify;
 }
 .description .short-image {
     display: inline-block;
     height: auto;
     max-width: 100%;
-    padding-left: 80px;
+    padding: 60px;
 }
 .description .full-image {
     display: inline-block;
@@ -113,8 +115,5 @@ body {
 	}
 	.caption p {
 		width: 90%;
-	}
-	.description .short-image {
-		padding-left: 40px;
 	}
 }
