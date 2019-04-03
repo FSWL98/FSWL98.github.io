@@ -96,6 +96,11 @@ function drawText (context, canvas, text, lineHeight) {
         marginTop += lineHeight;
     });
 }
+function download () {
+    var canvas = document.getElementById("canvasD");
+    var data = canvas.toDataURL('image/jpeg');
+    this.href = data;
+}
 function createCanvas(width, height) {
     var canvas = document.createElement('canvas');
     canvas.id = "canvasD";
@@ -106,5 +111,12 @@ function createCanvas(width, height) {
     return canvas;
 }
 function addCanvasToBody (width, height) {
+    var button = document.createElement('a');
+    button.id = 'downloadButton';
+    button.setAttribute('download', 'lab3.jpg');
+    button.innerHTML = "Тыкать тут";
+
     document.body.appendChild(createCanvas(width, height));
+    document.body.appendChild(button);
+    downloadButton.addEventListener('click', download, true);
 }
