@@ -1,11 +1,5 @@
 var isDone = [0, 0, 0, 0];
-function randomSize (min, max) {
-    return Math.floor(min+ + Math.random() * (max + 1 - min));
-}
 
-function generateSizesForCanvas(canvas) {
-    return { x: randomSize(50, canvas.width - 50), y: randomSize(50, canvas.height - 50)};
-}
 function drawRandImage (canvas, context, x, y, width, height, index) {
     var pic = new Image();
     pic.setAttribute('crossOrigin', 'anonymous');
@@ -18,11 +12,10 @@ function drawRandImage (canvas, context, x, y, width, height, index) {
 }
 
 function drawImages (canvas, context) {
-    var sizes = generateSizesForCanvas(canvas);
-    var widths = [sizes.x, sizes.x, canvas.width - sizes.x, canvas.width - sizes.x];
-    var heights = [sizes.y, canvas.height - sizes.y, sizes.y, canvas.height - sizes.y];
-    var XStartPoints = [0, 0, sizes.x, sizes.x];
-    var YStartPoints = [0, sizes.y, 0, sizes.y];
+    var widths = [canvas.width/4, canvas.width/4, canvas.width - canvas.width/4, canvas.width - canvas.width/4];
+    var heights = [canvas.height/4, canvas.height - canvas.height/4, canvas.height/4, canvas.height - canvas.height/4];
+    var XStartPoints = [0, 0, canvas.width/4, canvas.width/4];
+    var YStartPoints = [0, canvas.height/4, 0, canvas.height/4];
     for (var i=0; i<4; i++) {
         drawRandImage(canvas, context, XStartPoints[i], YStartPoints[i], widths[i], heights[i], i);
     }
